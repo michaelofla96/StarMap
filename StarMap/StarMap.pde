@@ -15,3 +15,10 @@ void loadData()
 {
   table = loadTable("HabHYG15ly.csv","header");
 }
+
+void printStars()
+{
+  for(StarMap e: Star)
+  {
+    println(e);
+  }

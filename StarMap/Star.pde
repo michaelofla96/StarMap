@@ -22,7 +22,7 @@ class Star
   }
   
    Star(String Hab, String DisplayName
-  , float Distance, float Xg_Yg_Zg
+  , float Distance, int Xg_Yg_Zg
   , float AbsMag)
   {
     this.Hab = Hab; // this is used to refer to the fields
@@ -30,4 +30,12 @@ class Star
     this.Distance = Distance;
     this.Xg_Yg_Zg = Xg_Yg_Zg;
     this.AbsMag = AbsMag;
-  }  
+  } 
+   // Converts the object to a string
+  // so it can be printed
+  String toString()
+  {
+    return Hab + "\t" + DisplayName + "\t" + Distance 
+    + "\t" + Xg_Yg_Zg + "\t" + AbsMag;
+  }
+}}
