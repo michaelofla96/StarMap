@@ -5,9 +5,13 @@ ArrayList<Star> Star = new ArrayList<Star>();//A global variable
 void setup()
 {
   size(800,800);
-  table = loadTable("HabHYG15ly.csv","header");
   
   loadData(); //Methods to be called
   printStars();
   toString();
+}
+
+void loadData()
+{
+  table = loadTable("HabHYG15ly.csv","header");
 }
