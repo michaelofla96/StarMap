@@ -6,4 +6,8 @@ void setup()
 {
   size(800,800);
   table = loadTable("HabHYG15ly.csv","header");
+  
+  loadData(); //Methods to be called
+  printStars();
+  toString();
 }
